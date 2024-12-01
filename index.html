@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Sorting Algorithm</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Sorting Algorithm</h1>
+
+        <h2>Add Task to List</h2>
+        <input type="text" id="taskInput" placeholder="Enter a task" />
+        <button onclick="addTask()">Add Task</button>
+
+        <h2>List</h2>
+        <div id="taskList"></div>
+
+        <h2>Remove from List</h2>
+        <input type="number" id="removeIndex" placeholder="Enter line number" />
+        <button onclick="removeTask()">Remove Task</button>
+
+        <h2>Search from List</h2>
+        <input type="text" id="searchInput" placeholder="Enter search term" />
+        <button onclick="searchTasks()">Search</button>
+        <div id="searchResults"></div>
+
+        <h2>Arrange List Alphabetically</h2>
+        <button onclick="arrangeList('asc')">A-Z</button>
+        <button onclick="arrangeList('desc')">Z-A</button>
+        <div id="arrangedList"></div>
+
+        <h2>Recent Changes</h2>
+        <div id="recentChanges"></div>
+
+        <h2>Group Members</h2>
+        <ul id="groupMembers"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
